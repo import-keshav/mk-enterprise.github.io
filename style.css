@@ -1,0 +1,176 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #f4f4f4;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p { /* Tagline styling */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+    color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #337ab7; /* Blue color for links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #23527c; /* Darker blue on hover */
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: center; /* Center section content by default */
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #337ab7;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #e9f5ff; /* Light blue background */
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #337ab7;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff7f50; /* Coral color */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e67347; /* Darker coral on hover */
+}
+
+/* Products Section */
+#products ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    text-align: left; /* Align product list items to the left for better readability */
+    display: inline-block; /* To center the block of list items */
+}
+
+#products ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-left: 3px solid #ff7f50; /* Coral accent border */
+}
+
+#products ul li strong {
+    color: #337ab7;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Align contact list items to the left */
+    display: inline-block; /* To center the block of list items */
+}
+
+#contact ul li {
+    margin-bottom: 8px;
+}
+
+#contact ul li a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design (Basic) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin: 10px 0; /* Add some margin for stacked links */
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    #products ul, #contact ul {
+        /* Ensure lists take full width on smaller screens if they were inline-block */
+        display: block;
+        text-align: center;
+    }
+     #products ul li, #contact ul li {
+        text-align: left; /* Keep text left-aligned within list items */
+     }
+}
