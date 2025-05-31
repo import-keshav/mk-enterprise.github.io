@@ -97,25 +97,6 @@ section h2 {
     background-color: #e67347; /* Darker coral on hover */
 }
 
-/* Products Section */
-#products ul {
-    list-style-type: none; /* Remove default bullets */
-    padding: 0;
-    text-align: left; /* Align product list items to the left for better readability */
-    display: inline-block; /* To center the block of list items */
-}
-
-#products ul li {
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border-left: 3px solid #ff7f50; /* Coral accent border */
-}
-
-#products ul li strong {
-    color: #337ab7;
-}
-
 /* Contact Section */
 #contact ul {
     list-style-type: none;
@@ -165,12 +146,12 @@ footer {
         font-size: 1em;
     }
 
-    #products ul, #contact ul {
+    #contact ul {
         /* Ensure lists take full width on smaller screens if they were inline-block */
         display: block;
         text-align: center;
     }
-     #products ul li, #contact ul li {
+     #contact ul li {
         text-align: left; /* Keep text left-aligned within list items */
      }
 }
